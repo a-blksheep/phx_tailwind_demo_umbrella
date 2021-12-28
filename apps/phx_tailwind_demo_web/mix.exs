@@ -49,7 +49,8 @@ defmodule TailwindDemoWeb.MixProject do
       {:gettext, "~> 0.18"},
       {:phx_tailwind_demo, in_umbrella: true},
       {:jason, "~> 1.2"},
-      {:plug_cowboy, "~> 2.5"}
+      {:plug_cowboy, "~> 2.5"},
+      {:tailwind, "~> 0.1", runtime: Mix.env() == :dev}
     ]
   end
 
